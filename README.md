@@ -1,5 +1,8 @@
 # Algoritmos de busqueda y ordenamiento
 
-## El codigo tiene 5 metodos, dos de busqueda secuencial y binaria, y los otros tres son de bubble sort, insertion sort y selection sort, aplicados en arrays
+## Funcionalidades
+El codigo tiene 5 metodos, dos de busqueda secuencial y binaria, y los otros tres son de bubble sort, insertion sort y selection sort, aplicados en arrays.
+Se crea un array y se ejecutan los tres metodos de ordenamiento
 
-## Codigo realizado por: Alina Vazquez Arrieta
+## Creditos
+Codigo realizado por: Alina Vazquez Arrieta
