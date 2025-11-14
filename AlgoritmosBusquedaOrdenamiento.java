@@ -1,8 +1,30 @@
 public class AlgoritmosBusquedaOrdenamiento {
+    // Atributos para la lista
+    private Nodo primerNodo;
+
+    // Constructor para la lista
+    public AlgoritmosBusquedaOrdenamiento() {
+        this.primerNodo = null;
+    }
 
     // Algoritmos de Busqueda
 
-    // Busqueda Secuencial
+    // Busqueda Secuencial en lista 
+    public int busquedaSecuencialLista(int valorABuscar) { 
+        Nodo nodoActual = this.primerNodo;
+        int indiceValorEncontrado = 0;
+        int valorEncontrado = 0;
+        while (nodoActual != null) {
+            if (nodoActual.getNumero() == valorABuscar) {
+                valorEncontrado = indiceValorEncontrado;
+            }
+            nodoActual = nodoActual.getNext();
+            indiceValorEncontrado++;
+        }
+        return valorEncontrado;
+    }
+
+    // Busqueda Secuencial en array
     public int busquedaSecuencial(int[] arreglo, int valorABuscar) {
         int indiceValorEncontrado = 0;
         for (int i = 0; i < arreglo.length; i++) {
@@ -13,11 +35,12 @@ public class AlgoritmosBusquedaOrdenamiento {
         return indiceValorEncontrado;
     }
 
-    // Busqueda Binaria
+    // Metodo que ejecuta la busqueda binaria
     public int busquedaBinaria(int[] numeros, int numeroABuscar) {
         return buscar(numeros, numeroABuscar, 0, numeros.length);
     }
 
+    // Busqueda Binaria 
     private int buscar(int[] numeros, int numeroABuscar, int inicio, int fin) {
         int centroDelArray = (inicio + fin) / 2;
         int numeroBuscado = 0;
@@ -48,6 +71,9 @@ public class AlgoritmosBusquedaOrdenamiento {
         return arreglo;
     }
 
+    // Algoritmo Bubble Sort en listas
+    // No lo logre hacer    
+
     // Algoritmo Insertion Sort
     public int[] insertionSort(int[] arreglo) {
         int n = arreglo.length;
@@ -62,6 +88,9 @@ public class AlgoritmosBusquedaOrdenamiento {
         }
         return arreglo;
     }
+
+    // Algoritmo Insertion Sort en listas
+    // No lo logre hacer
 
     // Algoritmo Selection Sort
     public int[] selectionSort(int[] arreglo) {
@@ -80,32 +109,6 @@ public class AlgoritmosBusquedaOrdenamiento {
         return arreglo;
     }
 
-    public static void main(String[] args) {
-        AlgoritmosBusquedaOrdenamiento algoritmos = new AlgoritmosBusquedaOrdenamiento();
-        int[] arreglo = {5, 2, 9, 1, 5, 6};
-
-        // Prueba de Bubble Sort
-        int[] arregloOrdenadoBurbuja = algoritmos.bubbleSort(arreglo.clone());
-        System.out.println("Bubble Sort: ");
-        for (int num : arregloOrdenadoBurbuja) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-
-        // Prueba de Insertion Sort
-        int[] arregloOrdenadoInsercion = algoritmos.insertionSort(arreglo.clone());
-        System.out.println("Insertion Sort: ");
-        for (int num : arregloOrdenadoInsercion) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-
-        // Prueba de Selection Sort
-        int[] arregloOrdenadoSeleccion = algoritmos.selectionSort(arreglo.clone());
-        System.out.println("Selection Sort: ");
-        for (int num : arregloOrdenadoSeleccion) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-    }
+    // Algoritmo Selection Sort en listas
+    // No lo logre hacer
 }

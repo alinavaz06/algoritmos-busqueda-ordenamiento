@@ -1,8 +1,19 @@
 # Algoritmos de busqueda y ordenamiento
 
 ## Funcionalidades
-El codigo tiene 5 metodos, dos de busqueda secuencial y binaria, y los otros tres son de bubble sort, insertion sort y selection sort, aplicados en arrays.
-Se crea un array y se ejecutan los tres metodos de ordenamiento
+El codigo tiene 5 metodos:
+Algoritmos de busqueda:
+    - Busqueda secuencial:
+        - arrays 
+         listas
+    - Busqueda binaria
+Algoritmos de ordenamiento:
+    - Bubble sort
+    - Insertion sort
+    - Selection sort
+
+## Instrucciones de uso
+Ejecutar el Main.java
 
 ## Creditos
 Codigo realizado por: Alina Vazquez Arrieta
